@@ -15,10 +15,10 @@
         <a href="index.php" class="logo">GrandCare</a>
 
         <nav class="navbar">
-            <a href="templates/about.php">Nosotros</a>
-            <a href="templates/articles.php">Artículos</a>
-            <a href="templates/helpers.php">Cuidadores</a>
-            <a href="templates/new.php">Nuevo Cuidador</a>
+            <a href="templates/about.php">nosotros</a>
+            <a href="templates/articles.php">artículos</a>
+            <a href="templates/helpers.php">cuidadores</a>
+            <a href="templates/new.php">nuevo cuidador</a>
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -30,13 +30,35 @@
     <section class="footer">
         <div class="box-container">
             <div class="box">
-                <h3>Links Rápidos</h3>
-                <a href="templates/about.php"><i class="fa-solid fa-angle-right"></i> Nosotros</a>
-                <a href="templates/articles.php"><i class="fa-solid fa-angle-right"></i> Artículos</a>
-                <a href="templates/helpers.php"><i class="fa-solid fa-angle-right"></i> Cuidadores</a>
-                <a href="templates/new.php"><i class="fa-solid fa-angle-right"></i> Nuevo Cuidador</a>
+                <h3>links rápidos</h3>
+                <a href="templates/about.php"><i class="fa-solid fa-angle-right"></i> nosotros</a>
+                <a href="templates/articles.php"><i class="fa-solid fa-angle-right"></i> artículos</a>
+                <a href="templates/helpers.php"><i class="fa-solid fa-angle-right"></i> cuidadores</a>
+                <a href="templates/new.php"><i class="fa-solid fa-angle-right"></i> nuevo cuidador</a>
             </div>
 
+            <div class="box">
+                <h3>links extras</h3>
+                <a href="#"><i class="fa-solid fa-angle-right"></i> dudas / sugerencias</a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i> regulación </a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i> política de privacidad</a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i> términos de uso</a>
+            </div>
+            
+            <div class="box">
+                <h3>información de contacto</h3>
+                <a href="#"><i class="fa-solid fa-phone"></i> 999 999 999 </a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> grandcare@gmail.com </a>
+                <a href="#"><i class="fa-solid fa-map"></i> gijón, asturias - 33210</a>
+            </div>
+
+            <div class="box">
+                <h3>síguenos</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> grandcare </a>
+                <a href="#"><i class="fab fa-twitter"></i> grandcare </a>
+                <a href="#"><i class="fab fa-instagram"></i> grandcare </a>
+                <a href="#"><i class="fab fa-linkedin"></i> grandcare </a>
+            </div>
         </div>
     </section>
 
