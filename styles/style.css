@@ -83,6 +83,23 @@ section{
 }
 
 
+.footer{
+    background-color: var(--light-black);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+
+.footer .box-container .box h3{
+    color: var(--white);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+
 @media (max-width:1200px) {
     section{
         padding: 3rem 5%;
