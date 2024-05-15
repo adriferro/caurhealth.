@@ -22,7 +22,6 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
 }
 
 html{
@@ -103,7 +102,7 @@ section{
 .footer .box-container .box a{
     color: var(--light-white);
     font-size: 1.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     display: block;
 }
 
@@ -117,9 +116,18 @@ section{
     padding-right: 2rem;
 }
 
+.footer .credit{
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: .1rem solid var(--light-white);
+    font-size: 2rem;
+    color: var(--white);
+}
 
-
-
+.footer .credit span{
+    color: var(--main-color);
+}
 
 
 
