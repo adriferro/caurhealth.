@@ -41,6 +41,10 @@ html::-webkit-scrollbar-thumb{
     background-color: var(--main-color);
 }
 
+section{
+    padding: 5rem 10%;
+}
+
 .header{
     position: sticky;
     top: 0;
@@ -50,7 +54,47 @@ html::-webkit-scrollbar-thumb{
     background-color: var(--white);
     display: flex;
     padding-top: 2rem;
-    padding-bottom: var(--box-shadow);
+    padding-bottom: 2rem;
+    box-shadow: var(--box-shadow);
     align-items: center;
     justify-content: space-between;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: var(--black);
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--black);
+    display: none;
+}
+
+
+@media (max-width:1200px) {
+    section{
+        padding: 3rem 5%;
+    }
+}
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+
+    section{
+        padding: 3rem 2rem;
+    }
 }
