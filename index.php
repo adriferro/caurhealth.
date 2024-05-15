@@ -15,11 +15,12 @@
         <a href="index.php" class="logo">GrandCare</a>
 
         <nav class="navbar">
-            <a href="index.php">Inicio</a>
             <a href="about.php">Nosotros</a>
             <a href="helpers.php">Cuidadores</a>
-            <a href="new.php">Nuevo Cuidador</a>
+            <a href="new.php">Artículos</a>
         </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
     </section>
 
 
