@@ -25,6 +25,37 @@
     </section>
 
 
+    <section class="principles">
+        <h1 class="heading-title"> Nuestros principios </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="assets/img/compromiso.png" alt="">
+                <h3>Compromiso</h3>
+            </div>
+            <div class="box">
+                <img src="assets/img/seguridad.png" alt="">
+                <h3>Seguridad</h3>
+            </div>
+            <div class="box">
+                <img src="" alt="3">
+                <h3>Entrega</h3>
+            </div>
+            <div class="box">
+                <img src="assets/img/motivacion.png" alt="">
+                <h3>Motivación</h3>
+            </div>
+            <div class="box">
+                <img src="assets/img/confianza.png" alt="">
+                <h3>Confianza</h3>
+            </div>
+            <div class="box">
+                <img src="" alt="6">
+                <h3>https://storyset.com/</h3>
+            </div>
+        </div>
+    </section>
+
+
 
 
     <section class="footer">
