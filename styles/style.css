@@ -89,6 +89,20 @@ section{
     display: none;
 }
 
+.home{
+    padding: 0;
+}
+
+.home .slide{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
 .principles .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
