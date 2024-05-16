@@ -29,8 +29,32 @@
         <h1>Sobre nosotros</h1>
     </div>
 
+    <section class="about">
+        <div class="image">
+            <img src="" alt="">
+        </div>
 
+        <div class="content">
+            <h3>¿Por qué escogernos?</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores suscipit pariatur ducimus accusamus omnis magnam quae cumque voluptas sed voluptates repellat nisi laboriosam nihil excepturi, commodi, hic voluptatibus quia ipsum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente expedita veritatis possimus temporibus voluptatum mollitia iste exercitationem dolorem asperiores quis.</p>
 
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <span>Cuidadores verificados</span>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-comments-dollar"></i>
+                    <span>Tú decides el precio</span>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span>Trato directo, no intermediarios</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <section class="footer">
