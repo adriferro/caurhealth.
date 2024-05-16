@@ -223,6 +223,24 @@ section{
     color: var(--black);
 }
 
+.home-helpers .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.home-helpers .box-container .image{
+    height: 25rem;
+    overflow: hidden;
+}
+
+.home-helpers .box-container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
 
 .footer{
     background-color: var(--bg-footer);
