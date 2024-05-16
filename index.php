@@ -25,6 +25,38 @@
     </section>
 
 
+    <section class="home">
+        <div class="home-slider">
+            <div class="W">
+                <div class="slide" style="background:url() no-repeat">
+                    <div class="content">
+                        <span>Descubre, Contacta, Ayuda</span>
+                        <h3>¡Contacta sin compromiso!</h3>
+                        <a href="templates/helpers.php" class="btn">Ver más</a>
+                    </div>
+                </div>
+
+                <div class="slide" style="background:url() no-repeat">
+                    <div class="content">
+                        <span>Descubre, Contacta, Ayuda</span>
+                        <h3>¡Contacta sin compromiso!</h3>
+                        <a href="templates/helpers.php" class="btn">Ver más</a>
+                    </div>
+                </div>
+
+                <div class="slide" style="background:url() no-repeat">
+                    <div class="content">
+                        <span>Descubre, Contacta, Ayuda</span>
+                        <h3>¡Contacta sin compromiso!</h3>
+                        <a href="templates/helpers.php" class="btn">Ver más</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
     <section class="principles">
         <h1 class="heading-title"> Nuestros principios </h1>
         <div class="box-container">
@@ -85,7 +117,7 @@
             </div>
         </div>
 
-        <div class="credit"> Creado por <span>Adrián Fernández</span> | Todos los derechos reservados! </div>
+        <div class="credit"> Creado por <span>Adrián Fernández</span> | ¡Todos los derechos reservados! </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
