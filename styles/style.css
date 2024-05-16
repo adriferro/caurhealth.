@@ -223,21 +223,54 @@ section{
     color: var(--black);
 }
 
+.home-helpers{
+    background: var(--light-bg);
+}
+
 .home-helpers .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
 }
 
-.home-helpers .box-container .image{
+.home-helpers .box-container .box{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+}
+
+.home-helpers .box-container .box .image{
     height: 25rem;
     overflow: hidden;
 }
 
-.home-helpers .box-container .image img{
+.home-helpers .box-container .box .image img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: .2s linear;
+}
+
+.home-helpers .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.home-helpers .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.home-helpers .box-container .box .content p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.home-helpers .load-more{
+    text-align: center;
+    margin-top: 2rem;
 }
 
 
