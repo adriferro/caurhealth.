@@ -56,6 +56,7 @@
 
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -92,7 +93,7 @@
 
     <section class="home-about">
         <div class="image">
-            <img src="" alt="">
+            <img src="assets/img/seguridad.png" alt="">
         </div>
 
         <div class="content">
@@ -104,7 +105,7 @@
 
 
     <section class="home-helpers">
-        <h1 class="heading">Cuidadores más antiguos</h1>
+        <h1 class="heading-title">Cuidadores más antiguos</h1>
 
         <div class="box-container">
             <div class="box">
