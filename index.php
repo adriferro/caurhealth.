@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="styles/style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
@@ -26,33 +27,35 @@
 
 
     <section class="home">
-        <div class="home-slider">
-            <div class="W">
-                <div class="slide" style="background:url() no-repeat">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide" style="background:url(assets/img/compromiso.png) no-repeat">
                     <div class="content">
-                        <span>Descubre, Contacta, Ayuda</span>
+                        <span>DESCUBRE</span>
+                        <h3>¡Descubre nuevos cuidadores!</h3>
+                        <a href="templates/helpers.php" class="btn">Ver más</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background:url(assets/img/confianza.png) no-repeat">
+                    <div class="content">
+                        <span>CONTACTA</span>
                         <h3>¡Contacta sin compromiso!</h3>
                         <a href="templates/helpers.php" class="btn">Ver más</a>
                     </div>
                 </div>
 
-                <div class="slide" style="background:url() no-repeat">
+                <div class="swiper-slide slide" style="background:url(assets/img/seguridad.png) no-repeat">
                     <div class="content">
-                        <span>Descubre, Contacta, Ayuda</span>
-                        <h3>¡Contacta sin compromiso!</h3>
+                        <span>AYUDA</span>
+                        <h3>¡Ayuda a tu ser querido!</h3>
                         <a href="templates/helpers.php" class="btn">Ver más</a>
                     </div>
                 </div>
-
-                <div class="slide" style="background:url() no-repeat">
-                    <div class="content">
-                        <span>Descubre, Contacta, Ayuda</span>
-                        <h3>¡Contacta sin compromiso!</h3>
-                        <a href="templates/helpers.php" class="btn">Ver más</a>
-                    </div>
-                </div>
-
             </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
 
@@ -77,12 +80,12 @@
                 <h3>Motivación</h3>
             </div>
             <div class="box">
-                <img src="assets/img/confianza.png" alt="">
-                <h3>Confianza</h3>
-            </div>
-            <div class="box">
                 <img src="" alt="6">
                 <h3>https://storyset.com/</h3>
+            </div>
+            <div class="box">
+                <img src="assets/img/confianza.png" alt="">
+                <h3>Confianza</h3>
             </div>
         </div>
     </section>
