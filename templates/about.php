@@ -26,12 +26,12 @@
 
 
     <div class="heading">
-        <h1>Sobre nosotros</h1>
+        <h1>¿Capricho o necesidad?</h1>
     </div>
 
     <section class="about">
         <div class="image">
-            <img src="" alt="">
+            <img src="../assets/img/seguridad.png" alt="">
         </div>
 
         <div class="content">
