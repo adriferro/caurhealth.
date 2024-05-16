@@ -7,18 +7,18 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <section class="header">
-        <a href="index.php" class="logo">GrandCare</a>
+        <a href="../index.php" class="logo">GrandCare</a>
 
         <nav class="navbar">
-            <a href="templates/about.php">Nosotros</a>
-            <a href="templates/articles.php">Artículos</a>
-            <a href="templates/helpers.php">Cuidadores</a>
-            <a href="templates/new.php">Nuevo cuidador</a>
+            <a href="about.php">Nosotros</a>
+            <a href="articles.php">Artículos</a>
+            <a href="helpers.php">Cuidadores</a>
+            <a href="new.php">Nuevo cuidador</a>
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -37,10 +37,10 @@
         <div class="box-container">
             <div class="box">
                 <h3>Links Rápidos</h3>
-                <a href="templates/about.php"><i class="fa-solid fa-angle-right"></i> Nosotros</a>
-                <a href="templates/articles.php"><i class="fa-solid fa-angle-right"></i> Artículos</a>
-                <a href="templates/helpers.php"><i class="fa-solid fa-angle-right"></i> Cuidadores</a>
-                <a href="templates/new.php"><i class="fa-solid fa-angle-right"></i> Nuevo cuidador</a>
+                <a href="about.php"><i class="fa-solid fa-angle-right"></i> Nosotros</a>
+                <a href="articles.php"><i class="fa-solid fa-angle-right"></i> Artículos</a>
+                <a href="helpers.php"><i class="fa-solid fa-angle-right"></i> Cuidadores</a>
+                <a href="new.php"><i class="fa-solid fa-angle-right"></i> Nuevo cuidador</a>
             </div>
 
             <div class="box">
