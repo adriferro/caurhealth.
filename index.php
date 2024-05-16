@@ -103,6 +103,45 @@
     </section>
 
 
+    <section class="home-helpers">
+        <h1 class="heading">Cuidadores más antiguos</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="assets/img/seguridad.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Priscila Marín</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, aut.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="assets/img/seguridad.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Ausencia Reviejo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, aut.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="assets/img/seguridad.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Alba Román</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, aut.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more"><a href="templates/helpers.php" class="btn">Cargar más</a></div>
+    </section>
+
+
     <section class="footer">
         <div class="box-container">
             <div class="box">
