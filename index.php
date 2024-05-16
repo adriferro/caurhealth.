@@ -59,7 +59,6 @@
         </div>
     </section>
 
-
     <section class="principles">
         <h1 class="heading-title"> Nuestros principios </h1>
         <div class="box-container">
@@ -91,6 +90,17 @@
     </section>
 
 
+    <section class="home-about">
+        <div class="image">
+            <img src="" alt="">
+        </div>
+
+        <div class="content">
+            <h3>¿Dónde empieza todo?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vel fuga harum dolorum, officia voluptatibus, aliquam iure, itaque id quasi fugiat optio inventore. Tenetur vitae possimus ducimus non obcaecati ex.</p>
+            <a href="templates/about.php" class="btn">¡Leer Más!</a>
+        </div>
+    </section>
 
 
     <section class="footer">
