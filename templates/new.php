@@ -60,10 +60,10 @@
             </div>
         </div>
 
-        <div class="credit"> Creado por <span>Adrián Fernández</span> | Todos los derechos reservados! </div>
+        <div class="credit"> Creado por <span>Adrián Fernández</span> | ¡Todos los derechos reservados! </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="../scripts/main.js"></script>
 </body>
 </html>
