@@ -255,6 +255,10 @@ section{
     background: var(--white);
 }
 
+.home-helpers .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
 .home-helpers .box-container .box .image{
     height: 25rem;
     overflow: hidden;
@@ -346,6 +350,40 @@ section{
     color: var(--light-black);
     display: block;
 }
+
+
+
+
+.helpers .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30, 1fr));
+    gap: 2rem;
+}
+
+.helpers .box-container .box{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+}
+
+.helpers .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.helpers .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+}
+
+.helpers .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+
+
 
 
 
