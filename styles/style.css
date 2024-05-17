@@ -430,6 +430,33 @@ section{
     flex: 1 1 41rem;
 }
 
+.join .join-form .flex .inputBox input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+
+.join .join-form .flex .inputBox input:focus{
+    background: var(--black);
+    color: var(--white);
+}
+
+.join .join-form .flex .inputBox input:focus::placeholder{
+    color: var(--light-white);
+}
+
+.join .join-form .flex .inputBox span{
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+
+.join .join-form .btn{
+    margin-top: 2rem;
+}
+
 
 
 .footer{
