@@ -415,6 +415,21 @@ section{
 }
 
 
+.join .join-form{
+    padding: 2rem;
+    background: var(--light-bg);
+}
+
+.join .join-form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.join .join-form .flex .inputBox{
+    flex: 1 1 41rem;
+}
+
 
 
 .footer{
