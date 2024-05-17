@@ -33,7 +33,7 @@
     <section class="join">
         <h1 class="heading-title">¡Anúnciate con nosotros!</h1>
 
-        <form action="" method="post" class="">
+        <form action="" method="post" class="join-form">
             <div class="flex">
                 <div class="inputBox">
                     <span>Nombre :</span>
@@ -56,13 +56,13 @@
                 </div>
 
                 <div class="inputBox">
-                    <span>Fecha de nacimiento :</span>
-                    <input type="date" placeholder="Introduce tu fecha de nacimiento" name="birth">
+                    <span>Disponible interno :</span>
+                    <input type="text" placeholder="Sí / No" name="intern">
                 </div>
 
                 <div class="inputBox">
-                    <span>Disponible interno :</span>
-                    <input type="text" placeholder="Sí / No" name="intern">
+                    <span>Fecha de nacimiento :</span>
+                    <input type="date" placeholder="Introduce tu fecha de nacimiento" name="birth">
                 </div>
             </div>
 
