@@ -26,7 +26,7 @@
 
 
     <div class="heading">
-        <h1>¿Capricho o necesidad?</h1>
+        <h1>Nosotros</h1>
     </div>
 
     <section class="about">
@@ -45,12 +45,12 @@
                     <span>Cuidadores verificados</span>
                 </div>
                 <div class="icons">
-                    <i class="fa-solid fa-comments-dollar"></i>
-                    <span>Tú decides el precio</span>
+                    <i class="fa-solid fa-comments"></i>
+                    <span>Servicio personalizable</span>
                 </div>
                 <div class="icons">
                     <i class="fa-solid fa-address-book"></i>
-                    <span>Trato directo, no intermediarios</span>
+                    <span>Ningún intermediario</span>
                 </div>
             </div>
         </div>
