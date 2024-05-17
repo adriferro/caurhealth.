@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuevo</title>
+    <title>Únete</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
@@ -26,10 +26,49 @@
 
 
     <div class="heading">
-        <h1>Únete a nosotros!</h1>
+        <h1>¡Únete!</h1>
     </div>
 
 
+    <section class="join">
+        <h1 class="heading-title">¡Anúnciate con nosotros!</h1>
+
+        <form action="" method="post" class="">
+            <div class="flex">
+                <div class="inputBox">
+                    <span>Nombre :</span>
+                    <input type="text" placeholder="Introduce tu nombre" name="name">
+                </div>
+
+                <div class="inputBox">
+                    <span>Apellido :</span>
+                    <input type="text" placeholder="Introduce tu apellido" name="surname">
+                </div>
+                
+                <div class="inputBox">
+                    <span>Email :</span>
+                    <input type="email" placeholder="Introduce tu email" name="email">
+                </div>
+
+                <div class="inputBox">
+                    <span>Teléfono :</span>
+                    <input type="number" placeholder="Introduce tu nº teléfono" name="phone">
+                </div>
+
+                <div class="inputBox">
+                    <span>Fecha de nacimiento :</span>
+                    <input type="date" placeholder="Introduce tu fecha de nacimiento" name="birth">
+                </div>
+
+                <div class="inputBox">
+                    <span>Disponible interno :</span>
+                    <input type="text" placeholder="Sí / No" name="intern">
+                </div>
+            </div>
+
+            <input type="submit" value="submit" class="btn">
+        </form>
+    </section>
 
 
 
