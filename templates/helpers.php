@@ -39,7 +39,13 @@
                 </div>
                 <div class="content">
                     <h3>Priscila Marín</h3>
-                    <a href="#" class="btn">Ver</a>
+                    <button onclick="showMore()" class="btn">Ver</button>
+
+                    <dialog id="show-dialog" class="dialog">
+                        <h3>Informe detallado</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, modi.</p>
+                        <button onclick="cancelShow()" class="btn">Cerrar</button>
+                    </dialog>
                 </div>
             </div>
 
