@@ -39,7 +39,6 @@
                 </div>
                 <div class="content">
                     <h3>Priscila Marín</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, minima?</p>
                     <a href="#" class="btn">Ver</a>
                 </div>
             </div>
@@ -50,7 +49,6 @@
                 </div>
                 <div class="content">
                     <h3>Rubén Lobo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, minima?</p>
                     <a href="#" class="btn">Ver</a>
                 </div>
             </div>
@@ -61,7 +59,6 @@
                 </div>
                 <div class="content">
                     <h3>Alfonso Méndez</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, minima?</p>
                     <a href="#" class="btn">Ver</a>
                 </div>
             </div>
@@ -72,7 +69,6 @@
                 </div>
                 <div class="content">
                     <h3>Lucas Alonso</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, minima?</p>
                     <a href="#" class="btn">Ver</a>
                 </div>
             </div>
@@ -83,7 +79,6 @@
                 </div>
                 <div class="content">
                     <h3>Sergio González</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, minima?</p>
                     <a href="#" class="btn">Ver</a>
                 </div>
             </div>
@@ -94,7 +89,6 @@
                 </div>
                 <div class="content">
                     <h3>Eva Blanco</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, minima?</p>
                     <a href="#" class="btn">Ver</a>
                 </div>
             </div>
@@ -105,7 +99,6 @@
                 </div>
                 <div class="content">
                     <h3>Ana Montero</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, minima?</p>
                     <a href="#" class="btn">Ver</a>
                 </div>
             </div>
@@ -116,7 +109,6 @@
                 </div>
                 <div class="content">
                     <h3>Laura Matamoros</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, minima?</p>
                     <a href="#" class="btn">Ver</a>
                 </div>
             </div>
@@ -127,7 +119,6 @@
                 </div>
                 <div class="content">
                     <h3>Francisco Herrero</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, minima?</p>
                     <a href="#" class="btn">Ver</a>
                 </div>
             </div>
@@ -138,7 +129,6 @@
                 </div>
                 <div class="content">
                     <h3>Cristina Pedroche</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, minima?</p>
                     <a href="#" class="btn">Ver</a>
                 </div>
             </div>
@@ -149,7 +139,6 @@
                 </div>
                 <div class="content">
                     <h3>Maikel Dela</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, minima?</p>
                     <a href="#" class="btn">Ver</a>
                 </div>
             </div>
@@ -160,7 +149,6 @@
                 </div>
                 <div class="content">
                     <h3>Fernando Santos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, minima?</p>
                     <a href="#" class="btn">Ver</a>
                 </div>
             </div>
