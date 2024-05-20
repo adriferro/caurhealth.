@@ -33,7 +33,7 @@
     <section class="join">
         <h1 class="heading-title">¡Anúnciate con nosotros!</h1>
 
-        <form onsubmit="sendEmail(); reset(); return false" method="post" class="join-form">
+        <form onsubmit="sendEmail(); reset(); return false" method="post" class="new-form">
             <div class="flex">
                 <div class="inputBox">
                     <span>Nombre :</span>
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <input type="submit" value="submit" class="btn">
+            <input type="submit" value="submit" class="btn" name="send">
         </form>
     </section>
 
