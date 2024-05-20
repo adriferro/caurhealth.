@@ -402,12 +402,12 @@ section{
     color: var(--black);
 }
 
-.helpers .box-container .box .content p{
+/*.helpers .box-container .box .content p{
     font-size: 1.5rem;
     color: var(--light-black);
     line-height: 2;
     padding: 1rem 0;
-}
+}*/
 
 .helpers .load-more{
     text-align: center;
