@@ -31,7 +31,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide" style="background:url(assets/img/compromiso.png) no-repeat">
                     <div class="content">
-                        <span>DESCUBRE</span>
+                        <span>¡DESCUBRE!</span>
                         <h3>¡Descubre nuevos cuidadores!</h3>
                         <a href="templates/helpers.php" class="btn">Ver más</a>
                     </div>
@@ -39,17 +39,17 @@
 
                 <div class="swiper-slide slide" style="background:url(assets/img/confianza.png) no-repeat">
                     <div class="content">
-                        <span>CONTACTA</span>
-                        <h3>¡Contacta sin compromiso!</h3>
-                        <a href="templates/helpers.php" class="btn">Ver más</a>
+                        <span>¡INFÓRMATE!</span>
+                        <h3>¡Lee y aprende!</h3>
+                        <a href="templates/articles.php" class="btn">Ver más</a>
                     </div>
                 </div>
 
                 <div class="swiper-slide slide" style="background:url(assets/img/seguridad.png) no-repeat">
                     <div class="content">
-                        <span>AYUDA</span>
-                        <h3>¡Ayuda a tu ser querido!</h3>
-                        <a href="templates/helpers.php" class="btn">Ver más</a>
+                        <span>¡ÚNETE!</span>
+                        <h3>¡Únete a nosotros!</h3>
+                        <a href="templates/new.php" class="btn">Ver más</a>
                     </div>
                 </div>
             </div>

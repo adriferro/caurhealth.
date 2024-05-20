@@ -26,7 +26,7 @@
 
 
     <div class="heading">
-        <h1>Nosotros</h1>
+        <h1>¡Hola!</h1>
     </div>
 
     <section class="about">

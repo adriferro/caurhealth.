@@ -26,7 +26,7 @@
 
 
     <div class="heading">
-        <h1>Listado</h1>
+        <h1>¡Busca!</h1>
     </div>
 
     <section class="helpers">
