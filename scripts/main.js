@@ -57,3 +57,15 @@ function sendEmail(){
   message => alert("¡Formulario enviado correctamente!")
 );
 }
+
+
+
+const showDialog = document.getElementById("show-dialog");
+
+function showMore(){
+  showDialog.showModal();
+}
+
+function cancelShow(){
+  showDialog.close();
+}
