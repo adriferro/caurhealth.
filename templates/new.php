@@ -33,36 +33,36 @@
     <section class="join">
         <h1 class="heading-title">¡Anúnciate con nosotros!</h1>
 
-        <form action="" method="post" class="join-form">
+        <form onsubmit="sendEmail(); reset(); return false" method="post" class="join-form">
             <div class="flex">
                 <div class="inputBox">
                     <span>Nombre :</span>
-                    <input type="text" placeholder="Introduce tu nombre" name="name">
+                    <input type="text" placeholder="Introduce tu nombre" name="name" required>
                 </div>
 
                 <div class="inputBox">
                     <span>Apellido :</span>
-                    <input type="text" placeholder="Introduce tu apellido" name="surname">
+                    <input type="text" placeholder="Introduce tu apellido" name="surname" required>
                 </div>
                 
                 <div class="inputBox">
                     <span>Email :</span>
-                    <input type="email" placeholder="Introduce tu email" name="email">
+                    <input type="email" placeholder="Introduce tu email" name="email" required>
                 </div>
 
                 <div class="inputBox">
                     <span>Teléfono :</span>
-                    <input type="number" placeholder="Introduce tu nº teléfono" name="phone">
+                    <input type="number" placeholder="Introduce tu nº teléfono" name="phone" required>
                 </div>
 
                 <div class="inputBox">
                     <span>Disponible interno :</span>
-                    <input type="text" placeholder="Sí / No" name="intern">
+                    <input type="text" placeholder="Sí / No" name="intern" required>
                 </div>
 
                 <div class="inputBox">
                     <span>Fecha de nacimiento :</span>
-                    <input type="date" placeholder="Introduce tu fecha de nacimiento" name="birth">
+                    <input type="date" placeholder="Introduce tu fecha de nacimiento" name="birth" required>
                 </div>
             </div>
 
@@ -103,6 +103,7 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="../scripts/main.js"></script>
 </body>
 </html>
