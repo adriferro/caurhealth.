@@ -414,6 +414,33 @@ section{
     margin-top: 2rem;
 }
 
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    padding: 20px;
+    border: 1px solid var(--light-white);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px var(--box-shadow);
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+}
+
+.dialog h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.dialog p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+
+
 
 .join .new-form{
     padding: 2rem;
@@ -563,6 +590,18 @@ section{
         margin: 2rem;
         text-align: center;
     }
+
+    .dialog {
+        width: 60%;
+    }
+
+    .dialog h3 {
+        font-size: 1.2rem;
+    }
+
+    .dialog p {
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width:450px) {
@@ -576,5 +615,17 @@ section{
 
     .home .slide .content h3{
         font-size: 7vw;
+    }
+
+    .dialog {
+        width: 90%;
+    }
+
+    .dialog h3 {
+        font-size: 1rem;
+    }
+
+    .dialog p {
+        font-size: 1.3rem;
     }
 }
