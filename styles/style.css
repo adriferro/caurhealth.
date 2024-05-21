@@ -360,6 +360,41 @@ section{
 
 
 
+.article{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.article .image{
+    flex: 1 1 41rem;
+}
+
+.article .image img{
+    width: 100%;
+}
+
+.article .content{
+    flex: 1 1 41rem;
+    text-align: center;
+}
+
+.article .content h3{
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.article .content p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+
+
+
 .helpers .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
