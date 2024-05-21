@@ -112,6 +112,9 @@ section{
     display: none;
 }
 
+
+
+
 .home{
     padding: 0;
 }
@@ -293,6 +296,9 @@ section{
     margin-top: 2rem;
 }
 
+
+
+
 .about{
     display: flex;
     align-items: center;
@@ -435,7 +441,7 @@ section{
 }
 
 .dialog p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 10px;
 }
 
@@ -483,6 +489,7 @@ section{
 .join .new-form .btn{
     margin-top: 2rem;
 }
+
 
 
 
