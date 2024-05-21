@@ -415,22 +415,22 @@ section{
 }
 
 
-.join .join-form{
+.join .new-form{
     padding: 2rem;
     background: var(--light-bg);
 }
 
-.join .join-form .flex{
+.join .new-form .flex{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
-.join .join-form .flex .inputBox{
+.join .new-form .flex .inputBox{
     flex: 1 1 41rem;
 }
 
-.join .join-form .flex .inputBox input{
+.join .new-form .flex .inputBox input{
     width: 100%;
     padding: 1.2rem 1.4rem;
     font-size: 1.6rem;
@@ -439,21 +439,21 @@ section{
     border: var(--border);
 }
 
-.join .join-form .flex .inputBox input:focus{
+.join .new-form .flex .inputBox input:focus{
     background: var(--black);
     color: var(--white);
 }
 
-.join .join-form .flex .inputBox input:focus::placeholder{
+.join .new-form .flex .inputBox input:focus::placeholder{
     color: var(--light-white);
 }
 
-.join .join-form .flex .inputBox span{
+.join .new-form .flex .inputBox span{
     font-size: 1.5rem;
     color: var(--light-black);
 }
 
-.join .join-form .btn{
+.join .new-form .btn{
     margin-top: 2rem;
 }
 
