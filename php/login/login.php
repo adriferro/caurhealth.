@@ -11,7 +11,8 @@
         if(mysqli_num_rows($select) > 0){
             $row = mysqli_fetch_assoc($select);
             $_SESSION['user_id'] = $row['id'];
-            header('location:../../index.html');
+            //header('location:../../index.html');
+            header('location:profile.php');
         }else{
             $message[] = '¡Email o contraseña incorrectos!'; 
 
