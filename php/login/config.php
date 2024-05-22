@@ -1,3 +1,3 @@
 <?php
-    $conn = mysqli_connect('localhost', 'root', '', 'user_db') or die('Fallo de conexión.');
+    $conn = mysqli_connect('localhost','root','','user_db') or die('Fallo de conexión.');
 ?>
