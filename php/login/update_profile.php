@@ -31,7 +31,34 @@
         ?>
 
         <form action="" method="post" enctype="multipart/form-data">
-            
+            <div class="flex">
+                <div class="inputBox">
+                    <span>Nombre de usuario:</span>
+                    <input type="text" name="update_name" value="<?php echo $fetch['name']; ?>" class="box">
+
+                    <span>Tu email:</span>
+                    <input type="email" name="update_email" value="<?php echo $fetch['email']; ?>" class="box">
+
+                    <span>Edita tu foto:</span>
+                    <input type="file" name="update_image" accept="image/jpg, image/jpeg, image/png" class="box">
+                </div>
+
+                <div class="inputBox">
+                    <input type="hidden" name="old_password" value="<?php echo $fetch['password']; ?>">
+
+                    <span>Antigua contraseña :</span>
+                    <input type="password" name="update_password" placeholder="Introduce contraseña previa" class="box">
+
+                    <span>Nueva contraseña :</span>
+                    <input type="password" name="new_password" placeholder="Introduce nueva contraseña" class="box">
+
+                    <span>Confirmar contraseña :</span>
+                    <input type="password" name="confirm_password" placeholder="Confirmar nueva contraseña" class="box">
+                </div>
+            </div>
+
+            <input type="submit" value="Editar perfil" name="update_profile" class="btn">
+            <a href="profile.php" class="delete-btn">Atrás</a>
         </form>
     </div>
 </body>
