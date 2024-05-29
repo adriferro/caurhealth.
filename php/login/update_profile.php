@@ -3,7 +3,29 @@
     session_start();
     $user_id = $_SESSION['user_id'];
 
+    if(isset($_POST['update_profile'])){
+        $update_name = mysqli_real_escape_string($conn, $_POST['update_name']);
+        $update_email = mysqli_real_escape_string($conn, $_POST['update_email']);
 
+        mysqli_query($conn, "UPDATE `user_form` SET name = '$update_name', email = '$update_email' WHERE id = '$user_id'") or die('¡Consulta fallida!');
+
+        $old_pass = $_POST['old_password'];
+        $update_pass = mysqli_real_escape_string($conn, md5($_POST['update_password']));
+        $new_pass = mysqli_real_escape_string($conn, md5($_POST['new_password']));
+        $confirm_pass = mysqli_real_escape_string($conn, md5($_POST['confirm_password']));
+
+        if(!empty($update_pass) || !empty($new_pass) || !empty($confirm_pass)){
+            if($update_pass != $old_pass){
+                $message[] = '¡Contraseña antigua incorrecta!';
+            }elseif($new_pass != $confirm_pass){
+                $message[] = '¡Contraseña de confirmación incorrecta!';
+            }else{
+                mysqli_query($conn, "UPDATE `user_form` SET password = '$confirm_pass' WHERE id = '$user_id'") or die('¡Consulta fallida!');
+                $message[] = '¡Contraseña editada correctamente!';
+            }
+        }
+
+    }
 ?>
 
 <!DOCTYPE html>
@@ -31,6 +53,11 @@
                     echo '<img src="../../assets/uploaded_img/predeterminado.png">';
                 }else{
                     echo '<img src="../../assets/uploaded_img/'.$fetch['image'].'">';
+                }
+                if(isset($message)){
+                    foreach($message as $message){
+                       echo '<div class="message">'.$message.'</div>';
+                    }
                 }
             ?>
             
