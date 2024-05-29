@@ -226,3 +226,23 @@ html::-webkit-scrollbar-thumb{
     color: var(--black);
     margin-top: 10px;
 }
+
+
+@media (max-width:650px) {
+    .update-profile form .flex{
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .update-profile form .flex .inputBox{
+        width: 100%;
+    }
+
+    .update-profile form .flex .inputBox span{
+        font-size: 16px;
+    }
+
+    .update-profile form .flex .inputBox .box{
+        font-size: 14px;
+    }
+}
