@@ -23,14 +23,17 @@
             if(mysqli_num_rows($select) > 0){
                     $fetch = mysqli_fetch_assoc($select);
             }        
-            if($fetch['image'] == ''){
-                echo '<img src="../../assets/uploaded_img/predeterminado.png">';
-            }else{
-                echo '<img src="../../assets/uploaded_img/'.$fetch['image'].'">';
-            }
-        ?>
+            ?>
 
         <form action="" method="post" enctype="multipart/form-data">
+            <?php
+                if($fetch['image'] == ''){
+                    echo '<img src="../../assets/uploaded_img/predeterminado.png">';
+                }else{
+                    echo '<img src="../../assets/uploaded_img/'.$fetch['image'].'">';
+                }
+            ?>
+            
             <div class="flex">
                 <div class="inputBox">
                     <span>Nombre de usuario:</span>
@@ -57,7 +60,7 @@
                 </div>
             </div>
 
-            <input type="submit" value="Editar perfil" name="update_profile" class="btn">
+            <input type="submit" value="Editar" name="update_profile" class="btn">
             <a href="profile.php" class="delete-btn">Atrás</a>
         </form>
     </div>
