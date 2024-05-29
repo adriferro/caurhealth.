@@ -44,6 +44,7 @@
             </h3>
             <a href="update_profile.php" class="btn">Editar el perfil</a>
             <a href="profile.php?logout=<?php echo $user_id; ?>" class="delete-btn">Cerrar sesión</a>
+            <a href="../../index.html" class="btn">Volver al inicio</a>
             <p>Nuevo <a href="login.php">inicio de sesión</a> o nuevo <a href="register.php">registro</a></p>
         </div>
     </div>
