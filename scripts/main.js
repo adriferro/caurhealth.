@@ -13,12 +13,19 @@ document.addEventListener('DOMContentLoaded', () => {
   let emailForm = document.querySelector('new-form');
 
   showButtons.forEach(button => {
-    button.addEventListener('click', showMore);
+    button.addEventListener('click', function() {
+        const dialogId = this.getAttribute('data-dialog-id');
+        showMore(dialogId);
+    });
   });
-
+  
   cancelButtons.forEach(button => {
-    button.addEventListener('click', cancelShow);
-  });
+    const dialogId = button.getAttribute('data-dialog-id');
+    button.addEventListener('click', function() {
+        cancelShow(dialogId);
+    });
+});
+
   
   if (emailForm) {
     emailForm.onsubmit = (e) => {

@@ -20,16 +20,16 @@ export function initializeLoadMore() {
 
 
 
-export function showMore(){
-  const showDialog = document.getElementById("show-dialog");
-  if(showDialog){
+export function showMore(dialogId) {
+  const showDialog = document.getElementById(dialogId);
+  if (showDialog) {
     showDialog.showModal();
   }
 }
 
-export function cancelShow(){
-  const showDialog = document.getElementById("show-dialog");
-  if(showDialog){
+export function cancelShow(dialogId) {
+  const showDialog = document.getElementById(dialogId);
+  if (showDialog) {
     showDialog.close();
   }
 }
