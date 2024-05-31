@@ -8,8 +8,9 @@
         $phone = $_POST['phone'];
         $intern = $_POST['intern'];
         $birth = $_POST['birth'];
+        $verified = 0;
 
-        $request = "insert into new_form(name, surname, email, phone, intern, birth) values ('$name','$surname','$email','$phone','$intern','$birth')";
+        $request = "INSERT INTO new_form (name, surname, email, phone, intern, birth, verified) VALUES ('$name','$surname','$email','$phone','$intern','$birth', '$verified')";
 
         mysqli_query($connection, $request);
 
