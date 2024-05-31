@@ -13,7 +13,7 @@
 
         mysqli_query($connection, $request);
 
-        header('location:new.html');
+        header('location:../templates/new.html');
     }else{
         echo 'Error de solicitud. Por favor, intente de nuevo.';
     }
