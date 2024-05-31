@@ -60,7 +60,11 @@
             <?php foreach ($helpers as $index => $helper): ?>
                 <div class="box">
                     <div class="image">
-                        <img src="../assets/img/seguridad.png " alt="">
+                        <?php if ($helper['verified'] == 1): ?>
+                            <img src="../assets/img/verificado.png" alt="Verificado">
+                        <?php else: ?>
+                            <img src="../assets/img/no-verificado.png" alt="No Verificado">
+                        <?php endif; ?>
                     </div>
                     <div class="content">
                         <h3><?php echo htmlspecialchars($helper['name'] . ' ' . $helper['surname']); ?></h3>
