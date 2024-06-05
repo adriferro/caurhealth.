@@ -1,10 +1,29 @@
 <?php
-session_start();
+    session_start();
 
-if (!isset($_SESSION['user_id'])) {
-    header("Location: login/login.php");
-    exit();
-}
+    if (!isset($_SESSION['user_id'])) {
+        header("Location: login/login.php");
+        exit();
+    }
+
+    $connection = mysqli_connect('localhost', 'root', '', 'caurhealth');
+
+    if (!$connection) {
+        die("Conexión fallida: " . mysqli_connect_error());
+    }
+
+    // Obtener los tres cuidadores con los ID más bajos
+    $sql = "SELECT id, name, surname, image FROM new_form ORDER BY id ASC LIMIT 3";
+    $result = mysqli_query($connection, $sql);
+
+    $cuidadores = [];
+    if (mysqli_num_rows($result) > 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            $cuidadores[] = $row;
+        }
+    }
+
+    mysqli_close($connection);
 ?>
 
 
@@ -119,35 +138,20 @@ if (!isset($_SESSION['user_id'])) {
         <h1 class="heading-title">Cuidadores más antiguos</h1>
 
         <div class="box-container">
-            <div class="box">
-                <div class="image">
-                    <img src="assets/img/seguridad.png" alt="">
+            <?php foreach ($cuidadores as $cuidador) { ?>
+                <div class="box">
+                    <div class="image">
+                        <?php if (!empty($cuidador['image'])): ?>
+                            <img src="assets/helpers_img/<?php echo htmlspecialchars($cuidador['image']); ?>" alt="">
+                        <?php else: ?>
+                            <img src="assets/uploaded:img/default.png" alt="No image available">
+                        <?php endif; ?>
+                    </div>
+                    <div class="content">
+                        <h3><?php echo htmlspecialchars($cuidador['name'] . ' ' . $cuidador['surname']); ?></h3>
+                    </div>
                 </div>
-                <div class="content">
-                    <h3>Priscila Marín</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, aut.</p>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="assets/img/seguridad.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>Ausencia Reviejo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, aut.</p>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="assets/img/seguridad.png" alt="">
-                </div>
-                <div class="content">
-                    <h3>Alba Román</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, aut.</p>
-                </div>
-            </div>
+            <?php } ?>
         </div>
 
         <div class="load-more"><a href="templates/helpers.php" class="btn">Cargar más</a></div>
