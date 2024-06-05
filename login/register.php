@@ -9,7 +9,7 @@
         $image = $_FILES['image']['name'];
         $image_size = $_FILES['image']['size'];
         $image_tmp_name = $_FILES['image']['tmp_name'];
-        $image_folder = '../../assets/uploaded_img/'.$image;
+        $image_folder = '../assets/uploaded_img/'.$image;
 
         $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE email = '$email' AND password = '$pass'") or die('¡Consulta fallida!');
 
@@ -43,7 +43,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     
-    <link rel="stylesheet" href="../../styles/login.css">
+    <link rel="stylesheet" href="../styles/login.css">
 </head>
 <body>
     <div class="form-container">

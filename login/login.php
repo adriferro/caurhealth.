@@ -11,8 +11,7 @@
         if(mysqli_num_rows($select) > 0){
             $row = mysqli_fetch_assoc($select);
             $_SESSION['user_id'] = $row['id'];
-            //header('location:../../index.html');
-            header('location:profile.php');
+            header('location:../index.php');
         }else{
             $message[] = '¡Email o contraseña incorrectos!'; 
 
@@ -28,7 +27,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     
-    <link rel="stylesheet" href="../../styles/login.css">
+    <link rel="stylesheet" href="../styles/login.css">
 </head>
 <body>
     <div class="form-container">

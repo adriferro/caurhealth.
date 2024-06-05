@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
 
-    <link rel="stylesheet" href="../../styles/login.css">
+    <link rel="stylesheet" href="../styles/login.css">
 </head>
 <body>
     <div class="container">
@@ -32,9 +32,9 @@
                     $fetch = mysqli_fetch_assoc($select);
                 }        
                 if($fetch['image'] == ''){
-                    echo '<img src="../../assets/uploaded_img/predeterminado.png">';
+                    echo '<img src="../assets/uploaded_img/predeterminado.png">';
                 }else{
-                    echo '<img src="../../assets/uploaded_img/'.$fetch['image'].'">';
+                    echo '<img src="../assets/uploaded_img/'.$fetch['image'].'">';
                 }
             ?>
             <h3>
@@ -44,7 +44,7 @@
             </h3>
             <a href="update_profile.php" class="btn">Editar el perfil</a>
             <a href="profile.php?logout=<?php echo $user_id; ?>" class="delete-btn">Cerrar sesión</a>
-            <a href="../../index.html" class="btn">Volver al inicio</a>
+            <a href="../index.php" class="btn">Volver al inicio</a>
             <p>Nuevo <a href="login.php">inicio de sesión</a> o nuevo <a href="register.php">registro</a></p>
         </div>
     </div>

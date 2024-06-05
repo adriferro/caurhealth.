@@ -28,7 +28,7 @@
         $update_image = $_FILES['update_image']['name'];
         $update_image_size = $_FILES['update_image']['size'];
         $update_image_tmp_name = $_FILES['update_image']['tmp_name'];
-        $update_image_folder = '../../assets/uploaded_img/'.$update_image;
+        $update_image_folder = '../assets/uploaded_img/'.$update_image;
 
         if(!empty($update_image)){
             if($update_image_size > 2000000){
@@ -52,7 +52,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar perfil</title>
 
-    <link rel="stylesheet" href="../../styles/login.css">
+    <link rel="stylesheet" href="../styles/login.css">
 
 </head>
 <body>
@@ -67,9 +67,9 @@
         <form action="" method="post" enctype="multipart/form-data">
             <?php
                 if($fetch['image'] == ''){
-                    echo '<img src="../../assets/uploaded_img/predeterminado.png">';
+                    echo '<img src="../assets/uploaded_img/predeterminado.png">';
                 }else{
-                    echo '<img src="../../assets/uploaded_img/'.$fetch['image'].'">';
+                    echo '<img src="../assets/uploaded_img/'.$fetch['image'].'">';
                 }
                 if(isset($message)){
                     foreach($message as $message){
