@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login/login.php");
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,13 +23,14 @@
 </head>
 <body>
     <section class="header">
-        <a href="index.html" class="logo">GrandCare</a>
+        <a href="index.php" class="logo">caurhealth.</a>
 
         <nav class="navbar">
-            <a href="templates/about.html">Nosotros</a>
-            <a href="templates/articles.html">Artículos</a>
-            <a href="templates/helpers.html">Cuidadores</a>
-            <a href="templates/new.html">Nuevo cuidador</a>
+            <a href="templates/about.php">Nosotros</a>
+            <a href="templates/articles.php">Artículos</a>
+            <a href="templates/helpers.php">Cuidadores</a>
+            <a href="templates/new.php">Nuevo cuidador</a>
+            <a href="login/profile.php">Mi perfil</a>
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -33,7 +44,7 @@
                     <div class="content">
                         <span>¡DESCUBRE!</span>
                         <h3>¡Descubre nuevos cuidadores!</h3>
-                        <a href="templates/helpers.html" class="btn">Ver más</a>
+                        <a href="templates/helpers.php" class="btn">Ver más</a>
                     </div>
                 </div>
 
@@ -41,7 +52,7 @@
                     <div class="content">
                         <span>¡INFÓRMATE!</span>
                         <h3>¡Lee y aprende!</h3>
-                        <a href="templates/articles.html" class="btn">Ver más</a>
+                        <a href="templates/articles.php" class="btn">Ver más</a>
                     </div>
                 </div>
 
@@ -49,7 +60,7 @@
                     <div class="content">
                         <span>¡ÚNETE!</span>
                         <h3>¡Únete a nosotros!</h3>
-                        <a href="templates/new.html" class="btn">Ver más</a>
+                        <a href="templates/new.php" class="btn">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -99,7 +110,7 @@
         <div class="content">
             <h3>¿Dónde empieza todo?</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vel fuga harum dolorum, officia voluptatibus, aliquam iure, itaque id quasi fugiat optio inventore. Tenetur vitae possimus ducimus non obcaecati ex.</p>
-            <a href="templates/about.html" class="btn">¡Leer Más!</a>
+            <a href="templates/about.php" class="btn">¡Leer Más!</a>
         </div>
     </section>
 
@@ -139,7 +150,7 @@
             </div>
         </div>
 
-        <div class="load-more"><a href="templates/helpers.html" class="btn">Cargar más</a></div>
+        <div class="load-more"><a href="templates/helpers.php" class="btn">Cargar más</a></div>
     </section>
 
 
@@ -147,15 +158,15 @@
         <div class="box-container">
             <div class="box">
                 <h3>Links Rápidos</h3>
-                <a href="templates/about.html"><i class="fa-solid fa-angle-right"></i> Nosotros</a>
-                <a href="templates/articles.html"><i class="fa-solid fa-angle-right"></i> Artículos</a>
-                <a href="templates/helpers.html"><i class="fa-solid fa-angle-right"></i> Cuidadores</a>
-                <a href="templates/new.html"><i class="fa-solid fa-angle-right"></i> Nuevo cuidador</a>
+                <a href="templates/about.php"><i class="fa-solid fa-angle-right"></i> Nosotros</a>
+                <a href="templates/articles.php"><i class="fa-solid fa-angle-right"></i> Artículos</a>
+                <a href="templates/helpers.php"><i class="fa-solid fa-angle-right"></i> Cuidadores</a>
+                <a href="templates/new.php"><i class="fa-solid fa-angle-right"></i> Nuevo cuidador</a>
             </div>
 
             <div class="box">
                 <h3>Links Extras</h3>
-                <a href="#"><i class="fa-solid fa-angle-right"></i> Dudas / Sugerencias</a>
+                <a href="login/profile.php"><i class="fa-solid fa-angle-right"></i> Mi perfil</a>
                 <a href="#"><i class="fa-solid fa-angle-right"></i> Regulación </a>
                 <a href="#"><i class="fa-solid fa-angle-right"></i> Política de privacidad</a>
                 <a href="#"><i class="fa-solid fa-angle-right"></i> Términos de uso</a>
@@ -164,9 +175,9 @@
             <div class="box">
                 <h3>Contacto</h3>
                 <a href="#"><i class="fa-solid fa-phone"></i> 999 999 999 </a>
-                <a href="#"><i class="fa-solid fa-envelope"></i> grandcare@gmail.com </a>
-                <a href="#"><i class="fab fa-facebook-f"></i> grandcare </a>
-                <a href="#"><i class="fab fa-instagram"></i> grandcare </a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> caurhealth@gmail.com </a>
+                <a href="#"><i class="fab fa-facebook-f"></i> caurhealth </a>
+                <a href="#"><i class="fab fa-instagram"></i> caurhealth </a>
             </div>
         </div>
 
