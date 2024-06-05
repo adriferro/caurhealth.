@@ -12,14 +12,14 @@ if (!isset($_SESSION['user_id'])) {
     $connection = mysqli_connect('localhost', 'root', '', 'caurhealth');
 
     if (!$connection) {
-        die("Connection failed: " . mysqli_connect_error());
+        die("Conexión fallida: " . mysqli_connect_error());
     }
 
     $query = "SELECT * FROM new_form";
     $result = mysqli_query($connection, $query);
 
     if (!$result) {
-        die("Query failed: " . mysqli_error($connection));
+        die("Consulta fallida: " . mysqli_error($connection));
     }
 
     $helpers = [];
@@ -71,10 +71,10 @@ if (!isset($_SESSION['user_id'])) {
             <?php foreach ($helpers as $index => $helper): ?>
                 <div class="box">
                     <div class="image">
-                        <?php if ($helper['verified'] == 1): ?>
-                            <img src="../assets/img/verificado.png" alt="Verificado">
+                        <?php if ($helper['verified'] == 1 && !empty($helper['image'])): ?>
+                            <img src="../assets/helpers_img/<?php echo htmlspecialchars($helper['image']); ?>" alt="Verificado">
                         <?php else: ?>
-                            <img src="../assets/img/no-verificado.png" alt="No Verificado">
+                            <img src="../assets/uploaded_img/predeterminado.png" alt="No Verificado">
                         <?php endif; ?>
                     </div>
                     <div class="content">
