@@ -1,3 +1,42 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: ../login/login.php");
+    exit();
+}
+
+
+    $connection = mysqli_connect('localhost', 'root', '', 'caurhealth');
+
+    if(isset($_POST['send'])){
+        $name = $_POST['name'];
+        $surname = $_POST['surname'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $intern = $_POST['intern'];
+        $birth = $_POST['birth'];
+        $verified = 0;
+
+        $check_query = "SELECT * FROM new_form WHERE email = '$email' OR phone = '$phone'";
+        $check_result = mysqli_query($connection, $check_query);
+
+        if (mysqli_num_rows($check_result) > 0) {
+            $message = '¡Ya existe un cuidador con el mismo email o teléfono!';
+        } else {
+            $request = "INSERT INTO new_form (name, surname, email, phone, intern, birth, verified) VALUES ('$name','$surname','$email','$phone','$intern','$birth', '$verified')";
+            
+            if (mysqli_query($connection, $request)) {
+                header('Location: helpers.php');
+                exit();
+            } else {
+                $message = 'Error de solicitud. Por favor, intente de nuevo.';
+            }
+        }
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,13 +51,14 @@
 </head>
 <body>
     <section class="header">
-        <a href="../index.html" class="logo">GrandCare</a>
+        <a href="../index.php" class="logo">caurhealth.</a>
 
         <nav class="navbar">
-            <a href="about.html">Nosotros</a>
-            <a href="articles.html">Artículos</a>
-            <a href="helpers.html">Cuidadores</a>
-            <a href="new.html">Nuevo cuidador</a>
+            <a href="about.php">Nosotros</a>
+            <a href="articles.php">Artículos</a>
+            <a href="helpers.php">Cuidadores</a>
+            <a href="new.php">Nuevo cuidador</a>
+            <a href="../login/profile.php">Mi perfil</a>
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -32,8 +72,13 @@
 
     <section class="join">
         <h1 class="heading-title">¡Anúnciate con nosotros!</h1>
+        <?php
+            if (!empty($message)) {
+                echo '<div class="message">'.$message.'</div>';
+            }
+        ?>
 
-        <form action="../php/new_form.php" method="post" class="new-form">
+        <form action="new.php" method="post" class="new-form">
             <div class="flex">
                 <div class="inputBox">
                     <span>Nombre :</span>
@@ -76,15 +121,15 @@
         <div class="box-container">
             <div class="box">
                 <h3>Links Rápidos</h3>
-                <a href="about.html"><i class="fa-solid fa-angle-right"></i> Nosotros</a>
-                <a href="articles.html"><i class="fa-solid fa-angle-right"></i> Artículos</a>
-                <a href="helpers.html"><i class="fa-solid fa-angle-right"></i> Cuidadores</a>
-                <a href="new.html"><i class="fa-solid fa-angle-right"></i> Nuevo cuidador</a>
+                <a href="about.php"><i class="fa-solid fa-angle-right"></i> Nosotros</a>
+                <a href="articles.php"><i class="fa-solid fa-angle-right"></i> Artículos</a>
+                <a href="helpers.php"><i class="fa-solid fa-angle-right"></i> Cuidadores</a>
+                <a href="new.php"><i class="fa-solid fa-angle-right"></i> Nuevo cuidador</a>
             </div>
 
             <div class="box">
                 <h3>Links Extras</h3>
-                <a href="#"><i class="fa-solid fa-angle-right"></i> Dudas / Sugerencias</a>
+                <a href="../login/profile.php"><i class="fa-solid fa-angle-right"></i> Mi perfil</a>
                 <a href="#"><i class="fa-solid fa-angle-right"></i> Regulación </a>
                 <a href="#"><i class="fa-solid fa-angle-right"></i> Política de privacidad</a>
                 <a href="#"><i class="fa-solid fa-angle-right"></i> Términos de uso</a>
@@ -93,9 +138,9 @@
             <div class="box">
                 <h3>Contacto</h3>
                 <a href="#"><i class="fa-solid fa-phone"></i> 999 999 999 </a>
-                <a href="#"><i class="fa-solid fa-envelope"></i> grandcare@gmail.com </a>
-                <a href="#"><i class="fab fa-facebook-f"></i> grandcare </a>
-                <a href="#"><i class="fab fa-instagram"></i> grandcare </a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> caurhealth@gmail.com </a>
+                <a href="#"><i class="fab fa-facebook-f"></i> caurhealth </a>
+                <a href="#"><i class="fab fa-instagram"></i> caurhealth </a>
             </div>
         </div>
 
