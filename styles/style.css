@@ -6,6 +6,7 @@
     --white:#fff;
     --light-black:#777;
     --light-white:#fff9;
+    --light-main: #c267e9;
     --dark-bg:rgba(0,0,0,.7);
     --light-bg:#eee;
     --bg-footer: #191825;
@@ -574,6 +575,16 @@ section{
     color: var(--main-color);
 }
 
+.message{
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--light-main);
+    color: var(--black);
+    font-size: 20px;
+}
 
 
 
