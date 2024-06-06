@@ -1,10 +1,35 @@
 <?php
-session_start();
+    session_start();
 
-if (!isset($_SESSION['user_id'])) {
-    header("Location: ../login/login.php");
-    exit();
-}
+    if (!isset($_SESSION['user_id'])) {
+        header("Location: ../login/login.php");
+        exit();
+    }
+
+
+    $connection = mysqli_connect('localhost', 'root', '', 'caurhealth');
+
+    if (!$connection) {
+        die("Conexión fallida: " . mysqli_connect_error());
+    }
+
+    $query = "SELECT * FROM articles";
+    $result = mysqli_query($connection, $query);
+
+    if (!$result) {
+        die("Consulta fallida: " . mysqli_error($connection));
+    }
+
+    $articles = [];
+    $alignment_counter = 0;
+
+    while ($row = mysqli_fetch_assoc($result)) {
+        $row['alignment_class'] = ($alignment_counter % 2 == 0) ? 'left-aligned' : 'right-aligned';
+        $articles[] = $row;
+        $alignment_counter++;
+    }
+
+    mysqli_close($connection);
 ?>
 
 
@@ -36,7 +61,7 @@ if (!isset($_SESSION['user_id'])) {
     </section>
 
 
-    <div class="heading" style="background: url(../assets/background/articles-bg.jpg) no-repeat">
+    <div class="heading">
         <h1>¡A Leer!</h1>
     </div>
 
@@ -44,47 +69,22 @@ if (!isset($_SESSION['user_id'])) {
     <section>
         <h1 class="heading-title">Artículos de interés</h1>
 
-        <div class="article">
-            <div class="image">
-                <img src="../assets/img/seguridad.png" alt="">
+        <?php foreach ($articles as $article): ?>
+            <div class="article <?php echo htmlspecialchars($article['alignment_class']); ?>">
+                <div class="image">
+                    <?php if (!empty($article['image'])): ?>
+                        <img src="../assets/articles_img/<?php echo htmlspecialchars($article['image']); ?>" alt="Imagen del artículo">
+                    <?php else: ?>
+                        <img src="../assets/uploaded_img/predeterminado.png" alt="Imagen predeterminada">
+                    <?php endif; ?>
+                </div>
+                <div class="content">
+                    <h3><?php echo htmlspecialchars($article['title']); ?></h3>
+                    <p><?php echo htmlspecialchars($article['summary']); ?></p>
+                    <a href="<?php echo htmlspecialchars($article['link']); ?>" class="btn">Comprar</a>
+                </div>
             </div>
-    
-            <div class="content">
-                <h3>Libro Libro Libro</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores suscipit pariatur ducimus accusamus omnis magnam quae cumque voluptas sed voluptates repellat nisi laboriosam nihil excepturi, commodi, hic voluptatibus quia ipsum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente expedita veritatis possimus temporibus voluptatum mollitia iste exercitationem dolorem asperiores quis.</p>
-    
-                <a href="#" class="btn">Leer</a>
-            </div>
-        </div>
-
-        <div class="article">
-            <div class="image">
-                <img src="../assets/img/seguridad.png" alt="">
-            </div>
-    
-            <div class="content">
-                <h3>Libro Libro Libro</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores suscipit pariatur ducimus accusamus omnis magnam quae cumque voluptas sed voluptates repellat nisi laboriosam nihil excepturi, commodi, hic voluptatibus quia ipsum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente expedita veritatis possimus temporibus voluptatum mollitia iste exercitationem dolorem asperiores quis.</p>
-    
-                <a href="#" class="btn">Leer</a>
-            </div>
-        </div>
-
-        <div class="about">
-            <div class="image">
-                <img src="../assets/img/seguridad.png" alt="">
-            </div>
-    
-            <div class="content">
-                <h3>Libro Libro Libro</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores suscipit pariatur ducimus accusamus omnis magnam quae cumque voluptas sed voluptates repellat nisi laboriosam nihil excepturi, commodi, hic voluptatibus quia ipsum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente expedita veritatis possimus temporibus voluptatum mollitia iste exercitationem dolorem asperiores quis.</p>
-    
-                <a href="#" class="btn">Leer</a>
-            </div>
-        </div>
+        <?php endforeach; ?>
     </section>
 
 
