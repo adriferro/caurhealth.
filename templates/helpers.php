@@ -60,7 +60,7 @@ if (!isset($_SESSION['user_id'])) {
     </section>
 
 
-    <div class="heading" style="background: url(../assets/background/articles-bg.jpg) no-repeat">
+    <div class="heading">
         <h1>¡Busca!</h1>
     </div>
 
@@ -97,7 +97,7 @@ if (!isset($_SESSION['user_id'])) {
         </div>
 
         <div class="load-more">
-            <span class="btn">Cargar más</span>
+            <button class="btn">Cargar más</button>
         </div>
     </section>
 

@@ -36,7 +36,7 @@ if (!isset($_SESSION['user_id'])) {
     </section>
 
 
-    <div class="heading" style="background: url(../assets/background/articles-bg.jpg) no-repeat">
+    <div class="heading">
         <h1>¡Hola!</h1>
     </div>
 
