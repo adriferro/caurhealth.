@@ -42,13 +42,12 @@ if (!isset($_SESSION['user_id'])) {
 
     <section class="about">
         <div class="image">
-            <img src="../assets/img/seguridad.png" alt="">
+            <img src="../assets/img/logo.jpg" alt="">
         </div>
 
         <div class="content">
             <h3>¿Por qué escogernos?</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores suscipit pariatur ducimus accusamus omnis magnam quae cumque voluptas sed voluptates repellat nisi laboriosam nihil excepturi, commodi, hic voluptatibus quia ipsum.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente expedita veritatis possimus temporibus voluptatum mollitia iste exercitationem dolorem asperiores quis.</p>
+            <p>Existe una necesidad real de una plataforma que facilitara la conexión entre familias que necesitan cuidadores y profesionales del cuidado de ancianos calificados y confiables. Decidí crear esta página web con el objetivo de proporcionar un lugar donde las familias puedan encontrar fácilmente cuidadores de calidad y confianza para sus seres queridos, evitando así las dificultades y la incertidumbre que enfrentamos. EL objetivo es hacer que el proceso de encontrar un cuidador sea más accesible, transparente y confiable para todos aquellos que lo necesiten.</p>
 
             <div class="icons-container">
                 <div class="icons">

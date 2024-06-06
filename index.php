@@ -123,12 +123,12 @@
 
     <section class="home-about">
         <div class="image">
-            <img src="assets/img/seguridad.png" alt="">
+            <img src="assets/img/inicio.png" alt="">
         </div>
 
         <div class="content">
             <h3>¿Dónde empieza todo?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vel fuga harum dolorum, officia voluptatibus, aliquam iure, itaque id quasi fugiat optio inventore. Tenetur vitae possimus ducimus non obcaecati ex.</p>
+            <p>Decidí crear una página web de cuidadores de ancianos después de experimentar personalmente las dificultades que enfrentó mi familia al buscar un cuidador para mi bisabuelo. Durante ese tiempo, nos dimos cuenta de que encontrar el cuidador adecuado para nuestras necesidades específicas era un proceso complicado y desafiante.</p>
             <a href="templates/about.php" class="btn">¡Leer Más!</a>
         </div>
     </section>
