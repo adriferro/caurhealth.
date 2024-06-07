@@ -73,6 +73,9 @@ html::-webkit-scrollbar-thumb{
     font-size: 20px;
 }
 
+.hidden {
+    display: none;
+}
 
 
 .form-container{
