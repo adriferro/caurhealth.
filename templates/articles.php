@@ -29,6 +29,12 @@
         $alignment_counter++;
     }
 
+    $sql = "SELECT image FROM user_form WHERE id = {$_SESSION['user_id']}";
+    $result = mysqli_query($connection, $sql);
+    if ($row = mysqli_fetch_assoc($result)) {
+        $_SESSION['user_image'] = $row['image'];
+    }
+
     mysqli_close($connection);
 ?>
 
@@ -55,7 +61,13 @@
             <a href="articles.php">Artículos</a>
             <a href="helpers.php">Cuidadores</a>
             <a href="new.php">Nuevo cuidador</a>
-            <a href="../login/profile.php">Mi perfil</a>
+            <a href="../login/profile.php">
+                <?php if (!empty($_SESSION['user_image'])): ?>
+                    <img src="../assets/uploaded_img/<?php echo htmlspecialchars($_SESSION['user_image']); ?>" alt="">
+                <?php else: ?>
+                    <img src="assets/uploaded_img/predeterminado.png" alt="">
+                <?php endif; ?>
+            </a>
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>

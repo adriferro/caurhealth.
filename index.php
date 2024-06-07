@@ -23,6 +23,12 @@
         }
     }
 
+    $sql = "SELECT image FROM user_form WHERE id = {$_SESSION['user_id']}";
+    $result = mysqli_query($connection, $sql);
+    if ($row = mysqli_fetch_assoc($result)) {
+        $_SESSION['user_image'] = $row['image'];
+    }
+
     mysqli_close($connection);
 ?>
 
@@ -33,6 +39,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
@@ -49,7 +56,13 @@
             <a href="templates/articles.php">Artículos</a>
             <a href="templates/helpers.php">Cuidadores</a>
             <a href="templates/new.php">Nuevo cuidador</a>
-            <a href="login/profile.php">Mi perfil</a>
+            <a href="login/profile.php">
+                <?php if (!empty($_SESSION['user_image'])): ?>
+                    <img src="assets/uploaded_img/<?php echo htmlspecialchars($_SESSION['user_image']); ?>" alt="">
+                <?php else: ?>
+                    <img src="assets/uploaded_img/predeterminado.png" alt="">
+                <?php endif; ?>
+            </a>
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>
