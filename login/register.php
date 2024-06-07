@@ -11,7 +11,7 @@
         $image_tmp_name = $_FILES['image']['tmp_name'];
         $image_folder = '../assets/uploaded_img/'.$image;
 
-        $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE email = '$email' AND password = '$pass'") or die('¡Consulta fallida!');
+        $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE name = '$name' OR email = '$email'") or die('¡Consulta fallida!');
 
         if(mysqli_num_rows($select) > 0){
             $message[] = '¡Este usuario ya existe!'; 
@@ -25,15 +25,14 @@
 
                 if($insert){
                     move_uploaded_file($image_tmp_name, $image_folder);
-                    $message[] = '¡Registro exitoso!';
-                    header('location:login.php');
+                    $message[] = '¡Registro exitoso! Serás redirigido en 2 segundos.';
+                    $success = true;
                 }else{
                     $message[] = '¡Registro fallido!';
                 }
             }
         }
     }
-
 ?>
 
 <!DOCTYPE html>
@@ -52,8 +51,8 @@
             <h3>Registro</h3>
             <?php
                 if(isset($message)){
-                    foreach($message as $message){
-                        echo '<div class="message">'.$message.'</div>';
+                    foreach($message as $msg){
+                        echo '<div class="message">'.$msg.'</div>';
                     }
                 }
             ?>
@@ -68,5 +67,17 @@
             <p>¿Ya tienes cuenta? <a href="login.php">Iniciar sesión.</a></p>
         </form>
     </div>
+
+    <?php if(isset($success) && $success === true): ?>
+        <script>
+            document.querySelectorAll('.box, .btn, p').forEach(function(element) {
+                element.classList.add('hidden');
+            });
+
+            setTimeout(function(){
+                window.location = 'login.php';
+            }, 2000);
+        </script>
+    <?php endif; ?>
 </body>
 </html>
