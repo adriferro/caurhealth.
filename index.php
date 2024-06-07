@@ -59,7 +59,7 @@
     <section class="home">
         <div class="swiper home-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide slide" style="background:url(assets/img/compromiso.png) no-repeat">
+                <div class="swiper-slide slide" style="background:url(assets/img/descubrir.jpg) no-repeat">
                     <div class="content">
                         <span>¡DESCUBRE!</span>
                         <h3>¡Descubre nuevos cuidadores!</h3>
@@ -67,7 +67,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide slide" style="background:url(assets/img/confianza.png) no-repeat">
+                <div class="swiper-slide slide" style="background:url(assets/img/leer.jpg) no-repeat">
                     <div class="content">
                         <span>¡INFÓRMATE!</span>
                         <h3>¡Lee y aprende!</h3>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide slide" style="background:url(assets/img/seguridad.png) no-repeat">
+                <div class="swiper-slide slide" style="background:url(assets/img/unir.jpg) no-repeat">
                     <div class="content">
                         <span>¡ÚNETE!</span>
                         <h3>¡Únete a nosotros!</h3>
