@@ -64,7 +64,7 @@ if (!isset($_SESSION['user_id'])) {
                 <?php if (!empty($_SESSION['user_image'])): ?>
                     <img src="../assets/uploaded_img/<?php echo htmlspecialchars($_SESSION['user_image']); ?>" alt="">
                 <?php else: ?>
-                    <img src="assets/uploaded_img/predeterminado.png" alt="">
+                    <img src="../assets/uploaded_img/predeterminado.png" alt="">
                 <?php endif; ?>
             </a>
         </nav>
